@@ -1,0 +1,26 @@
+{
+  "about": "The Sims's parts, in the order a player meets them, then its other modes. Each counts the same. A part is proven when a recording plays it from its first frame to its last and every frame matches the original: \"frames\" are the first and last of the recording's frames it covers. A part may end with a press that moves the game on, the way a player leaves it, such as Start on the title screen. Where the screen is one colour between two parts, those frames go with the part before. Foundations are what many parts need but no player would call a part, and they don't count towards the parts. Get a Life's later homes go by their order here until someone has played far enough to name them.",
+  "foundations": [
+    {"name": "The sound engine", "what": "The game's own sound, its music and effects played through the IOP and the sound chip as the original plays them. Every part has sound that prove compares, so every part needs it.", "done": "prove finds the sound of the logos the same as the original's, on every frame of the logos recording."},
+    {"name": "Drawing a house", "what": "The 3D view of a lot: its ground, walls, floors, roofs and objects, drawn through the GS and the vector units as the original draws them, with the camera turning and zooming.", "needs": ["The sound engine"]},
+    {"name": "The interface", "what": "The panels around a lot: the needs, mood, money, clock and speed, and the menu of things to do that opens over an object.", "needs": ["Drawing a house"]},
+    {"name": "A Sim living", "what": "A Sim walking around a lot, finding a way past walls and objects, using what a player picks, with their needs going up and down as the original works them out.", "needs": ["The interface"]},
+    {"name": "Sims together", "what": "Two or more Sims talking, their relationships changing, and the Sims a player doesn't control choosing what to do by themselves.", "needs": ["A Sim living"]},
+    {"name": "Buying and building", "what": "Buy mode and build mode: choosing, placing, turning and selling objects, and walls, floors, doors and windows, with money changing as the original changes it.", "needs": ["The interface"]}
+  ],
+  "parts": [
+    {"name": "Switching on and the logos", "needs": ["The sound engine"]},
+    {"name": "The main menu", "needs": ["The sound engine"]},
+    {"name": "Making a Sim for Get a Life", "needs": ["The interface"]},
+    {"name": "Get a Life's first home", "needs": ["Sims together", "Buying and building"]},
+    {"name": "Get a Life's second home", "needs": ["Sims together", "Buying and building"]},
+    {"name": "Get a Life's third home", "needs": ["Sims together", "Buying and building"]},
+    {"name": "Get a Life's fourth home", "needs": ["Sims together", "Buying and building"]},
+    {"name": "Get a Life's last home", "needs": ["Sims together", "Buying and building"]},
+    {"name": "Play the Sims: the neighbourhood", "needs": ["Drawing a house"]},
+    {"name": "Play the Sims: making a family", "needs": ["The interface"]},
+    {"name": "Play the Sims: a family's home", "needs": ["Sims together", "Buying and building"]},
+    {"name": "Two players", "needs": ["Sims together"]},
+    {"name": "Options and the memory card", "needs": ["The interface"]}
+  ]
+}
