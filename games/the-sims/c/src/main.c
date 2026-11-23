@@ -14,19 +14,8 @@ void game_start(void) {
 }
 
 // what the original does each frame, writing the GS's registers as it does, with its sums done the EE's way (ee_add
-// and the rest). To begin with, one sprite over the whole screen: blue, and green while a button is held
-void game_step(uint32_t buttons) {
-  gs_write(GS_FRAME_1, (uint64_t)(SCREEN_W / 64) << 16);
-  gs_write(GS_SCISSOR_1, (uint64_t)(SCREEN_W - 1) << 16 | (uint64_t)(SCREEN_H - 1) << 48);
-  gs_write(GS_XYOFFSET_1, 0);
-  gs_write(GS_TEST_1, 0x30000);
-  gs_write(GS_ZBUF_1, 1ull << 32);
-  gs_write(GS_PRMODECONT, 1);
-  gs_write(GS_PRIM, 6);
-  gs_write(GS_RGBAQ, buttons ? 0x8000FF00 : 0x80FF0000);
-  gs_write(GS_XYZ2, 0);
-  gs_write(GS_XYZ2, (uint64_t)(SCREEN_W << 4) | (uint64_t)(SCREEN_H << 4) << 16);
-}
+// and the rest). As the console starts, the original gives the GS nothing
+void game_step(uint32_t buttons) {}
 
 // its picture: what the screen shows of what the GS drew
 void game_draw(void) { gs_show(); }
