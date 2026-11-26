@@ -13,7 +13,7 @@ int boot_nothing(void) {
   return 0;
 }
 
-/** 0x00100820: the function the game takes, at 0x001009F0 when boot_choice is set and at 0x00100BB8 when it isn't */
+/** 0x00100820: which of two functions the game takes, the first when boot_choice is set and the second when it isn't */
 u32 boot_pick(void) {
   if (boot_choice != 0) return 0x001009F0;
   return 0x00100BB8;
