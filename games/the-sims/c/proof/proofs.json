@@ -1,5 +1,20 @@
 {
   "original": "7251a79a2ccc32cf4b647f7fa07d64bb07b0e684",
   "from": "Each function's proof, as npm run dp -- match and npm run dp -- twin found it: nothing else writes one",
-  "functions": []
+  "functions": [
+    ["00001648@LIBSD.IRX","memory","06ba513c690d4dd2","bfe0a5b77b182469",2000],
+    ["00001E70@LIBSD.IRX","memory","7cde1f0ae12442fb","a87d9ba9a715efeb",2000],
+    ["0000207C@LIBSD.IRX","memory","40d05b1914638722","adbcb62006b6587f",2000],
+    ["000020D4@LIBSD.IRX","memory","8034268bc5d8907c","5c8c123c4052d486",2000],
+    ["00002130@LIBSD.IRX","memory","0c14a9a09302587a","b9f209034bd9c69f",2000],
+    ["00003670@LIBSD.IRX","memory","5b32a6e73ae9e9c3","9c55473e91077db1",2000],
+    ["00003E3C@LIBSD.IRX","memory","d3342c264700d0ac","c7c8eeff631c0e0b",2000],
+    ["00004550@LIBSD.IRX","memory","c0db9cd570a4ee29","45eee97f508d5604",2000],
+    ["00100820","memory","185e3f1cdc30869c","360f8948f7b46277",2000],
+    ["00100B30","memory","6aa4abcdd48812e3","0a5385cf4a659d30",2000],
+    ["00119118","memory","02669ebbbd209c0c","7678540574197b42",2000],
+    ["00119120","memory","76bddc96cb524ea5","57e97786bea421b8",2000],
+    ["0011D230","memory","b2b049fee8be2a12","7678540574197b42",2000],
+    ["0011D9D8","memory","96d5a0798cfe5c69","c84d8239cbc2fa00",2000]
+  ]
 }
