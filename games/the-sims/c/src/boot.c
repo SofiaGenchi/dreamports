@@ -7,6 +7,8 @@ typedef unsigned int u32;
 
 // a word the start-up keeps, which says which of two functions the game hands on
 extern u32 boot_choice;
+// the two functions it hands on, which no twin rewrites yet, named by where the original has them
+extern const char boot_chosen[], boot_unchosen[];
 
 /** 0x00100B30: nothing to do, and 0 for it */
 int boot_nothing(void) {
@@ -15,8 +17,8 @@ int boot_nothing(void) {
 
 /** 0x00100820: which of two functions the game takes, the first when boot_choice is set and the second when it isn't */
 u32 boot_pick(void) {
-  if (boot_choice != 0) return 0x001009F0;
-  return 0x00100BB8;
+  if (boot_choice != 0) return (u32)boot_chosen;
+  return (u32)boot_unchosen;
 }
 
 /** 0x00119118: nothing to do for the start-up's step it's given */

@@ -2,14 +2,12 @@
   "original": "7251a79a2ccc32cf4b647f7fa07d64bb07b0e684",
   "from": "The original's functions that games/the-sims/c/ names, found by npm run dp -- portmap the-sims/c",
   "functions": [
-    ["00100820","src/boot.c:16"],
-    ["001009F0","src/boot.c:16"],
-    ["00100B30","src/boot.c:11"],
-    ["00100BB8","src/boot.c:16"],
-    ["00119118","src/boot.c:22"],
-    ["00119120","src/boot.c:25"],
-    ["0011D230","src/boot.c:30"],
-    ["0011D9D8","src/boot.c:33"]
+    ["00100820","src/boot.c:18"],
+    ["00100B30","src/boot.c:13"],
+    ["00119118","src/boot.c:24"],
+    ["00119120","src/boot.c:27"],
+    ["0011D230","src/boot.c:32"],
+    ["0011D9D8","src/boot.c:35"]
   ],
   "unmatched": [
 

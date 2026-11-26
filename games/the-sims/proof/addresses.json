@@ -1,5 +1,7 @@
 {
   "addresses": {
-    "boot_choice": "003CF900"
+    "boot_choice": "003CF900",
+    "boot_chosen": "001009F0",
+    "boot_unchosen": "00100BB8"
   }
 }
