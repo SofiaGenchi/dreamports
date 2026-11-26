@@ -1,0 +1,5 @@
+{
+  "about": "Switching on, nothing pressed through the logos and the intro, then Start on the title screen.",
+  "frames": 2400,
+  "held": [[0, []], [2200, ["START"]], [2210, []]]
+}
